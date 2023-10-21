@@ -1,0 +1,15 @@
+node{
+    
+    stage('for core java project') {
+    // some block
+    git branch: 'main', url: 'https://github.com/km98905544/cicd.git'
+}
+
+stage('execute maven target') {
+    // some block
+    sh 'mvn install'
+}
+    
+    
+    
+}
